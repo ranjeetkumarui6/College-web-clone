@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web page</title>
+    <style>
+        body {
+            margin: 0%;
+            padding: 0%;
+
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0%;
+            padding: 0%;
+        }
+
+        div {
+            float: left;
+        }
+
+        .r1 {
+            width: 100%;
+            background-color: #015C7B;
+            padding: 10px;
+            position: fixed;
+        }
+
+        .pr1 {
+            width: 20%;
+            color: white;
+            text-align: left;
+            font-size: 20px;
+        }
+
+        .pr2 {
+            width: 60%;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+
+
+        }
+
+        .pr3 {
+            width: 20%;
+            color: white;
+            text-align: right;
+            font-size: 20px;
+
+
+        }
+
+        .c1 {
+            color: red;
+            transition: transform 2s;
+
+        }
+
+        .c1:hover {
+            transform: rotate(360deg);
+        }
+
+        .r2 {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            margin-top: 30px;
+
+        }
+
+        .img1 {
+            width: 40%;
+            transition: transform 2s;
+
+        }
+
+        .img1:hover {
+            transform: scale(1.1);
+        }
+
+        .r3 {
+            width: 100%;
+            padding-top: 30px;
+            padding-bottom: 50px;
+            background-color: #015C7B;
+            position: relative;
+        }
+
+        .pr4 {
+
+            width: 50%;
+            background-color: #015C7B;
+            padding-left: 11%;
+            color: turquoise;
+        }
+
+        .pr5 {
+            width: 50%;
+            background-color: #015C7B;
+        }
+
+        .btn1 {
+            width: 30%;
+            padding: 10px;
+            background-color: blueviolet;
+            font-size: 15px;
+            color: white;
+            border-radius: 8px;
+            border: 2px double red;
+            transition: background-color 1s;
+        }
+
+        .btn1:hover {
+            background-color: magenta;
+            color: chartreuse;
+            border: 2 px solid rgb(10, 221, 28);
+
+        }
+
+        .img2 {
+
+            width: 75%;
+            height: 45%;
+        }
+
+        .pr6 {
+            width: 30%;
+        }
+
+        .pr7 {
+            width: 70%;
+            text-align: center;
+        }
+
+        .img3 {
+            width: 75%;
+            width: 75%;
+            padding-left: 50px;
+        }
+
+        .sp1 {
+            color: darkblue;
+        }
+
+        .p1 {
+            font-size: 20px;
+            text-align: justify;
+        }
+
+        .sp2 {
+            color: cadetblue;
+        }
+
+        pre {
+            font-size: 20px;
+        }
+
+        .about {
+            padding-left: 10px;
+            width: 18%;
+            background-color: rgba(0, 100, 200, 0.6);
+            position: absolute;
+            margin-left: 40px;
+            margin-top: 20%;
+            border-radius: 10px;
+            transition: background-color 2s;
+        }
+
+        .about:hover {
+            background-color: blue;
+            border: 1px solid black;
+            color: red;
+        }
+
+        .r5 {
+            width: 100%;
+            background-color: #015C7B;
+        }
+
+        .pr8 {
+            width: 20%;
+            margin: 2.5%;
+            background-color: aqua;
+            height: 350px;
+            border-radius: 10px;
+            padding: 5px;
+            display: inline;
+            text-align: center;
+            transition: transform 2s;
+        }
+
+        .pr8:hover {
+            transform: scale(1.1);
+        }
+
+        .pr9 {
+            width: 20%;
+            margin: 2.5%;
+            background-color: rgb(8, 82, 82);
+            height: 350px;
+            border-radius: 10px;
+            padding: 5px;
+            text-align: center;
+            transition: transform 2s;
+
+
+        }
+
+        .pr9:hover {
+            transform: scale(1.1);
+        }
+
+        .pr10 {
+            width: 20%;
+            margin: 2.5%;
+            background-color: rgb(26, 225, 126);
+            height: 350px;
+            border-radius: 10px;
+            padding: 5px;
+            text-align: center;
+            transition: transform 2s;
+
+
+        }
+
+        .pr10:hover {
+            transform: scale(1.1);
+        }
+
+        .pr11 {
+            width: 20%;
+            margin: 2.5%;
+            background-color: rgb(201, 31, 105);
+            height: 350px;
+            border-radius: 10px;
+            padding: 5px;
+            text-align: center;
+            transition: transform 2s;
+
+
+        }
+
+        .pr11:hover {
+            transform: scale(1.1);
+        }
+
+        .img4 {
+            height: 120px;
+            width: 120px;
+            float: left;
+        }
+
+        .btn2 {
+            width: 60%;
+            padding: 10px;
+            background-color: rgb(9, 138, 188);
+            font-size: 15px;
+            color: white;
+            border-radius: 8px;
+            border: 2px double rgb(232, 193, 19);
+            transition: background-color 1s;
+        }
+
+        .btn2:hover {
+            background-color: magenta;
+            color: black;
+            border: 2 px solid rgb(13, 20, 208);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="r1">
+        <div class="pr1"><i class="fa fa-envelope c1"></i>&nbsp;srgi666@gmail.com </div>
+        <div class="pr2"><i class="fa fa-phone c1"></i>&nbsp;9793000005,6,7</div>
+        <div class="pr3"><i class=" c1 fa fa-facebook"></i>&nbsp;<i class="  c1 fa fa-twitter"></i>&nbsp;<i
+                class="c1 fa fa-google "></i>&nbsp;<i class="c1 fa fa-plus"></i>&nbsp;<i
+                class="  c1 fa fa-linkedin"></i>&nbsp;</div>
+    </div>
+    <div class="r2"><img class="img1" src="images/srgifn.png" alt=""></div>
+    <div class="r3">
+        <div class="pr4">
+            <h1>SR INSTITUTE OF MANAGEMENT
+                & TECHNOLOGY</h1>
+            <br>
+            <br>
+            <h1 style="color: chocolate;">B.TECH | M.TECH | MBA</h1>
+            <br>
+            <h2>(Approve By AICT, Ministry of HRD Govt of india, and
+                Affiliated to Dr.A.P.J.Abdul Kalam Technical
+                University,Lucknow.)
+            </h2>
+            <br>
+            <button class="btn1">Visit our website</button>
+
+        </div>
+        <div class="pr5"><img class="img2" src="images/srm.jpg" alt=""></div>
+
+    </div>
+    <div class="r4">
+        <div class="about">
+            <h3>PAWAN SINGH CHAUHAN
+            </h3>
+            <br>
+            <p>MLC - SITAPUR, LUCKNOW
+            </p>
+            <p>CHAIRMAN - SRGI, LUCKNOW
+            </p>
+
+        </div>
+        <div class="pr6"><img class="img3" src="images/cmsir2.jpg" alt=""></div>
+        <div class="pr7">
+            <h1>WELCOME TO OUR <span class="sp1">SR GROUP OF INSTITUTIONS</span></h1>
+            <br>
+            <img src="images/book.png" alt="">
+            <br>
+            <br>
+            <p class="p1"><img src="images/quote-1.png" alt=""> S R Group was started with the establishment of S R
+                Institute of Management and Technology offering B.Tech programme with 4 branches and 240 seats in the
+                year 2009 by the chairman, Shri Pawan Singh Chauhan under S R educational Trust and is dedicated to Late
+                Subedar Singh and Late Raj Devi, who inspired their son. Subedar Rai Devi Educational Trust founded in
+                the year 2008 is registered under the society registration act of 1860. In 2010 S R Group of
+                Institutions came into existance with establishment of S R M Business School for MBA programme with 120
+                seats. New courses like IMBA (MAM), Bio-Tech, Agricultural Engineering etc. were introduced.The S R
+                Group is spread across 60 acres of land.<img src="images/quote-2.png" </p>
+            <pre>
+            घर-घर पहुचना है
+                                   <span class="sp2">  शिक्षा, संस्कार और रोजगार</span>
+
+        </pre>
+        </div>
+
+    </div>
+    <div class="r5">
+        <div class="pr8">
+            <h5 style="text-align: center;">SR INSTITUTE OF MANAGEMENT & TECHNOLOGY</h5>
+            <br>
+            <img src="images/srimt1.png" alt="" class="img4">
+            <span style="font-size: 15px;text-align: justify;">
+                <p>S R Group was started with the establishment of S R Institute of Management and Technology offering
+                    B.Tech programme with 4 branches and 240 seats in the year 2009 by the chairman, Shri Pawan Singh
+                    Chauhan under S R Educational Trust and is dedicated to Late Subedar Singh and Late Raj Devi, who
+                    inspired their son.</p>
+            </span>
+            <br>
+            <button class="btn2">Visit our website</button>
+        </div>
+        <div class="pr9">
+            <h4 style="text-align: center;">SRM BUSINESS SCHOOL</h4>
+            <br>
+            <img src="images/srmlogo.png" alt="" class="img4">
+            <span style="font-size: 15px;text-align: justify;">
+                <p>SRM BUSINESS SCHOOL is established in 2009. It was vision of Late Subedar Singh father of chairman,
+                    Mr. Pawan Singh to do such social activity through which future of our country can be enhanced as
+                    Late Subedar Singh was a activist</p>
+            </span>
+            <br>
+            <br>
+            <button class="btn2">Visit our website</button>
+        </div>
+        <div class="pr10">
+            <h4 style="text-align: center;">SR GLOBAL SCHOOL</h4>
+            <br>
+            <br>
+            <img src="images/global1.png" alt="" class="img4">
+            <span style="font-size: 15px;text-align: justify;">
+                <p>S R Global school is working under the aegis of SR Group Institution. Founder of the Group is Shree
+                    Pawan Singh chauhan a visionary, an educationist who believes in the all round devlopment of
+                    children.</p>
+            </span>
+            <br>
+            <br>
+            <button class="btn2">Visit our website</button>
+        </div>
+        <div class="pr11">
+            <h4 style="text-align: center;">SR INTERNATIONAL SCHOOL & SPORTS ACADEMY</h4>
+            <br>
+            <img src="images/logosrisa.png" alt="" class="img4">
+            <span style="font-size: 15px;text-align: justify;">
+                <p>All children start their school with sparkling imaginations, fertile minds and a willingness to take
+                    risks with what they think. Let's ignite their minds to think differently...</p>
+            </span>
+            <br>
+            <br>
+            <br>
+            <button class="btn2">Visit our website</button>
+        </div>
+    </div>
+</body>
+
+</html>
